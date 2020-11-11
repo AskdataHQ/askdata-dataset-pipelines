@@ -16,8 +16,8 @@ jobs:
         GITHUB: ${{ toJson(github) }}
       with:
         notebook: "openpolis/bandicovid_all_tender_lots/bandicovid_all_tender_lots.ipynb"
+        params: "nothing.json"
         isReport: False
-        poll: True
     - uses: actions/upload-artifact@master
       if: always()
       with:
